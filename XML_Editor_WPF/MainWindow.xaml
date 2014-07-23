@@ -1,0 +1,48 @@
+﻿<Window x:Class="XML_Editor_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:const="clr-namespace:XML_Editor_WPF.Properties"
+        Title="{x:Static const:Resources.Title_MainWindow}" Height="365" Width="574" ResizeMode="CanMinimize" Icon="favicon.ico">
+    <Grid Name="MainForm">
+        <TextBox Name="SelectFile_textBox" HorizontalAlignment="Left" Height="22" Margin="95,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="451"/>
+        <Label xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Content="{x:Static const:Resources.FilePath}" HorizontalAlignment="Left" Margin="10,9,0,0" VerticalAlignment="Top" Height="26" Width="120"/>
+        <ComboBox Name="selectWeapon_comboBox" HorizontalAlignment="Left" Margin="351,76,0,0" VerticalAlignment="Top" Width="195" IsEnabled="False" SelectionChanged="selectWeapon_comboBox_SelectionChanged" Height="23"/>
+        <Button Name="Select" Click="SelectClick" ClickMode="Release" xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Content="{x:Static const:Resources.SelectFileBTN}" HorizontalAlignment="Left" Margin="351,39,0,0" VerticalAlignment="Top" Width="95" Height="22"/>
+        <Button Name="LoadFile_btn" Click="LoadClick" ClickMode="Release" xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Content="{x:Static const:Resources.LoadFileBTN}" HorizontalAlignment="Left" Margin="451,39,0,0" VerticalAlignment="Top" Width="95" Height="22" IsEnabled="False"/>
+        <Button Name="editArgument" Click="EditClick" ClickMode="Release" xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Content="{x:Static const:Resources.EditBTN}" HorizontalAlignment="Left" Margin="451,104,0,0" VerticalAlignment="Top" Width="95" IsEnabled="False"/>
+        <Button Name="deleteBTN" Click="DeleteClick" ClickMode="Release" xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Content="{x:Static const:Resources.DeleteBTN}" HorizontalAlignment="Left" Margin="351,131,0,0" VerticalAlignment="Top" Width="95" IsEnabled="False"/>
+        <Button Name="addNewWeapon" Click="AddClick" ClickMode="Release" xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Content="{x:Static const:Resources.AddNewBTN}" HorizontalAlignment="Left" Margin="351,104,0,0" VerticalAlignment="Top" Width="95" IsEnabled="False"/>
+        <Button Name="cancelBTN" Click="CancelClick" ClickMode="Release" xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Content="{x:Static const:Resources.CancelBTN}" HorizontalAlignment="Left" Margin="471,287,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Name="saveBTN" Click="SaveClick" ClickMode="Release" xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Content="{x:Static const:Resources.SaveBTN}" HorizontalAlignment="Left" Margin="391,287,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="152,76,0,0" TextWrapping="Wrap" Text="{Binding Path=Class, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180" IsEnabled="False"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="152,104,0,0" TextWrapping="Wrap" Text="{Binding  Path=Name, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180" IsEnabled="False"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="152,132,0,0" TextWrapping="Wrap" Text="{Binding  Path=ResourceType, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180" IsEnabled="False"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="152,160,0,0" TextWrapping="Wrap" Text="{Binding  Path=Damage, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180" IsEnabled="False"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="152,188,0,0" TextWrapping="Wrap" Text="{Binding  Path=FiringRate, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180" IsEnabled="False"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="152,216,0,0" TextWrapping="Wrap" Text="{Binding  Path=BulletPrototype, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180" IsEnabled="False"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="152,244,0,0" TextWrapping="Wrap" Text="{Binding  Path=ExplosionType, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180" IsEnabled="False"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="152,276,0,0" TextWrapping="Wrap" Text="{Binding  Path=FiringType, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180" IsEnabled="False"/>
+        <Label xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Content="{x:Static const:Resources.Preview}" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top" Height="27" Width="137" FontWeight="Bold"/>
+        <Label xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Content="{x:Static const:Resources.Class}" HorizontalAlignment="Left" Margin="15,76,0,0" VerticalAlignment="Top" Height="27" Width="137"/>
+        <Label xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Content="{x:Static const:Resources.Name}" HorizontalAlignment="Left" Margin="15,104,0,0" VerticalAlignment="Top" Height="27" Width="137"/>
+        <Label xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Content="{x:Static const:Resources.ResourceType}" HorizontalAlignment="Left" Margin="15,132,0,0" VerticalAlignment="Top" Height="27" Width="137"/>
+        <Label xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Content="{x:Static const:Resources.Damage}" HorizontalAlignment="Left" Margin="15,160,0,0" VerticalAlignment="Top" Height="27" Width="137"/>
+        <Label xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Content="{x:Static const:Resources.FiringRate}" HorizontalAlignment="Left" Margin="15,188,0,0" VerticalAlignment="Top" Height="27" Width="137"/>
+        <Label xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Content="{x:Static const:Resources.BulletPrototype}" HorizontalAlignment="Left" Margin="15,216,0,0" VerticalAlignment="Top" Height="27" Width="137"/>
+        <Label xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Content="{x:Static const:Resources.ExplosionType}" HorizontalAlignment="Left" Margin="15,244,0,0" VerticalAlignment="Top" Height="27" Width="137"/>
+        <Label xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Content="{x:Static const:Resources.FiringType}" HorizontalAlignment="Left" Margin="15,276,0,0" VerticalAlignment="Top" Height="27" Width="137"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="243" Margin="11,66,0,0" VerticalAlignment="Top" Width="331"/>
+        <TextBlock Margin="10,312,468,-2">           
+            <Hyperlink NavigateUri="http://goo.gl/vFs0Ha" RequestNavigate="Hyperlink_RequestNavigate">
+                <Run  FontSize="10" xmlns:const="clr-namespace:XML_Editor_WPF.Properties"  Text="{x:Static const:Resources.PROGRAM_URL}"/>
+            </Hyperlink>
+        </TextBlock>
+        <TextBlock Margin="475,312,13,0">           
+            <Hyperlink NavigateUri="http://deusexmachina.fsay.net/" RequestNavigate="Hyperlink_RequestNavigate">
+                <Run  FontSize="10" xmlns:const="clr-namespace:XML_Editor_WPF.Properties"  Text="{x:Static const:Resources.DEM_URL}"/>
+            </Hyperlink>
+        </TextBlock>
+        <Label FontSize="10" xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Content="{x:Static const:Resources.COPYRIGHT}" HorizontalAlignment="Left" Margin="355,307,0,0" VerticalAlignment="Top" Height="27" Width="120"/>
+        <CheckBox  Name="deleteCheckBox" xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Content="{x:Static const:Resources.DELETE_CHEKER}" HorizontalAlignment="Left" Margin="351,158,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

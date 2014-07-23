@@ -1,0 +1,12 @@
+Bullet Prototype - Прототип снаряда. 
+
+В игре есть несколько типов снаряда:
+ - raybullet - огнестрельное оружие.
+ - someMortarShell (someMortarShell02) - гранаты миномёта.
+ - someLaserBeamGreen (someLaserBeamBlue) - лазерное оружие.
+ - somePlasmaBunch (somePlasmaBunchBig) - сгустки плазмы.
+ - hurricane_rocket (rocket_sml01, dragon_rocket, и т.д.) - ракеты для ракетниц.
+ Все прототипы снаряда содержатся в файле: "\data\gamedata\gameobjects\ammunition.xml"
+ 
+ Можно создавать свои прототипы, указывать им модель, стоимость и кучу других параметров.
+ Данная возможность будет реализована в следующей версии программы.

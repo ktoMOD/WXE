@@ -1,0 +1,412 @@
+﻿<Window x:Class="XML_Editor_WPF.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:const="clr-namespace:XML_Editor_WPF.Properties"
+        Title="{x:Static const:Resources.Title_AddWindow}" Height="395" Width="1070" ResizeMode="CanMinimize" Icon="favicon.ico">
+    <Grid Name="AddForm">
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="120,10,0,0" TextWrapping="Wrap" Text="{Binding Path=Class, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="120,38,0,0" TextWrapping="Wrap" Text="{Binding  Path=Name, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="120,66,0,0" TextWrapping="Wrap" Text="{Binding  Path=ModelFile, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="120,95,0,0" TextWrapping="Wrap" Text="{Binding  Path=ResourceType, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="120,123,0,0" TextWrapping="Wrap" Text="{Binding  Path=NodeScale, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="120,151,0,0" TextWrapping="Wrap" Text="{Binding  Path=Mass, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="120,179,0,0" TextWrapping="Wrap" Text="{Binding  Path=ActionDist, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="120,207,0,0" TextWrapping="Wrap" Text="{Binding  Path=InitialVelocity, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="120,235,0,0" TextWrapping="Wrap" Text="{Binding  Path=TracerEffect, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="120,263,0,0" TextWrapping="Wrap" Text="{Binding  Path=TracerRange, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="120,291,0,0" TextWrapping="Wrap" Text="{Binding  Path=BulletPrototype, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="471,10,0,0" TextWrapping="Wrap" Text="{Binding  Path=ExplosionType, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="471,38,0,0" TextWrapping="Wrap" Text="{Binding  Path=FiringEffect, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="471,66,0,0" TextWrapping="Wrap" Text="{Binding  Path=Damage, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="471,93,0,0" TextWrapping="Wrap" Text="{Binding  Path=FiringRate, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="471,123,0,0" TextWrapping="Wrap" Text="{Binding  Path=GroupingAngle, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="471,151,0,0" TextWrapping="Wrap" Text="{Binding  Path=NumBulletsInShot, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="471,179,0,0" TextWrapping="Wrap" Text="{Binding  Path=FiringRange, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="471,207,0,0" TextWrapping="Wrap" Text="{Binding  Path=RecoilForce, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="471,235,0,0" TextWrapping="Wrap" Text="{Binding  Path=DamageType, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="471,263,0,0" TextWrapping="Wrap" Text="{Binding  Path=FiringType, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="471,291,0,0" TextWrapping="Wrap" Text="{Binding  Path=CanBeUsedInAutogenerating, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="822,10,0,0" TextWrapping="Wrap" Text="{Binding  Path=Price, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="822,38,0,0" TextWrapping="Wrap" Text="{Binding  Path=Decal, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="822,66,0,0" TextWrapping="Wrap" Text="{Binding  Path=ShellsPoolSize, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="822,93,0,0" TextWrapping="Wrap" Text="{Binding  Path=WithShellsPoolLimit, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="822,123,0,0" TextWrapping="Wrap" Text="{Binding  Path=ChargeSize, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="822,151,0,0" TextWrapping="Wrap" Text="{Binding  Path=RechargingTime, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="822,179,0,0" TextWrapping="Wrap" Text="{Binding  Path=MaxCharges, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="822,207,0,0" TextWrapping="Wrap" Text="{Binding  Path=TurningSpeed, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="822,235,0,0" TextWrapping="Wrap" Text="{Binding  Path=Durability, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="822,263,0,0" TextWrapping="Wrap" Text="{Binding  Path=BlastWavePrototype, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="822,291,0,0" TextWrapping="Wrap" Text="{Binding  Path=VisibleInEncyclopedia, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="120,319,0,0" TextWrapping="Wrap" Text="{Binding  Path=CanBeDroppedFromEnemies, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="180"/>
+        <Button Name="cancelBTN" Click="CancelClick" ClickMode="Release" xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Content="{x:Static const:Resources.CancelBTN}" HorizontalAlignment="Left" Margin="959,325,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Name="saveBTN" Click="SaveClick" ClickMode="Release" xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Content="{x:Static const:Resources.SaveBTN}" HorizontalAlignment="Left" Margin="879,325,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="1.573,0.5"/>
+        <Label Content="Class" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Model File" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Resource Type" HorizontalAlignment="Left" Margin="10,93,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Node Scale" HorizontalAlignment="Left" Margin="10,123,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Mass" HorizontalAlignment="Left" Margin="10,151,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Action Dist" HorizontalAlignment="Left" Margin="10,179,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="InitialVelocity" HorizontalAlignment="Left" Margin="10,207,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Tracer Effect" HorizontalAlignment="Left" Margin="10,235,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Tracer Range" HorizontalAlignment="Left" Margin="10,263,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Bullet Prototype" HorizontalAlignment="Left" Margin="10,291,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Explosion Type" HorizontalAlignment="Left" Margin="361,10,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Firing Effect" HorizontalAlignment="Left" Margin="361,38,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Damage" HorizontalAlignment="Left" Margin="361,66,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Firing Rate" HorizontalAlignment="Left" Margin="361,93,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Grouping Angle" HorizontalAlignment="Left" Margin="361,123,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Num Bullets" HorizontalAlignment="Left" Margin="361,146,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="In Shot" HorizontalAlignment="Left" Margin="361,157,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Firing Range" HorizontalAlignment="Left" Margin="361,179,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Recoil Force" HorizontalAlignment="Left" Margin="361,207,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Damage Type" HorizontalAlignment="Left" Margin="361,235,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Firing Type" HorizontalAlignment="Left" Margin="361,263,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Can Be Used In" HorizontalAlignment="Left" Margin="361,285,0,0" VerticalAlignment="Top" Height="50" Width="110"/>
+        <Label Content="Autogenerating" HorizontalAlignment="Left" Margin="361,297,0,0" VerticalAlignment="Top" Height="50" Width="110"/>
+        <Label Content="Price" HorizontalAlignment="Left" Margin="712,10,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Decal" HorizontalAlignment="Left" Margin="712,38,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Shells Pool Size" HorizontalAlignment="Left" Margin="712,66,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="With Shells" HorizontalAlignment="Left" Margin="712,88,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Pool Limit" HorizontalAlignment="Left" Margin="712,99,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Charge Size" HorizontalAlignment="Left" Margin="712,123,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Recharging Time" HorizontalAlignment="Left" Margin="712,151,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Max Charges" HorizontalAlignment="Left" Margin="712,179,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Turning Speed" HorizontalAlignment="Left" Margin="712,207,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Durability" HorizontalAlignment="Left" Margin="712,235,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Blast Wave" HorizontalAlignment="Left" Margin="712,258,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Prototype" HorizontalAlignment="Left" Margin="712,269,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Visible In" HorizontalAlignment="Left" Margin="712,286,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Encyclopedia" HorizontalAlignment="Left" Margin="712,297,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="Can Be Dropped" HorizontalAlignment="Left" Margin="10,314,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="From Enemies" HorizontalAlignment="Left" Margin="10,325,0,0" VerticalAlignment="Top" Height="27" Width="110"/>
+        <Label Content="(Only Meridian 113!)" HorizontalAlignment="Left" Margin="10,336,0,0" VerticalAlignment="Top" Height="27" Width="119"/>
+        <Separator HorizontalAlignment="Left" Height="1" Margin="151,175,0,0" VerticalAlignment="Top" Width="380" RenderTransformOrigin="0.5,0.5">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+        <Separator HorizontalAlignment="Left" Height="1" Margin="502,175,0,0" VerticalAlignment="Top" Width="380" RenderTransformOrigin="0.5,0.5">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="310,10,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.ClassDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="310,38,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.NameDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="310,66,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.ModelFileDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="310,93,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.ResourceTypeDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="310,123,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.NodeScaleDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="310,151,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.MassDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="310,179,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.ActionDistDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="310,207,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.InitialVelocityDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="310,235,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.TracerEffectDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="310,263,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.TracerRangeDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="310,291,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.BulletPrototypeDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="661,10,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.ExplosionTypeDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="661,38,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.FiringEffectDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="661,66,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.DamageDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="661,93,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.FiringRateDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="661,123,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.GroupingAngleDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="661,151,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.NumBulletsInShotDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="661,179,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.FiringRangeDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="661,207,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.RecoilForceDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="661,235,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.DamageTypeDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="661,263,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.FiringTypeDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="661,291,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.CanBeUsedInAutogeneratingDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="1012,10,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.PriceDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="1012,38,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.DecalDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="1012,66,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.ShellsPoolSizeDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="1012,93,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.WithShellsPoolLimitDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="1012,123,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.ChargeSizeDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="1012,151,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.RechargingTimeDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="1012,179,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.MaxChargesDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="1012,207,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.TurningSpeedDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="1012,235,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.DurabilityDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="1012,263,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.BlastWavePrototypeDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="1012,291,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.VisibleInEncyclopediaDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+        <Image  Source="questionmark.png" HorizontalAlignment="Left" Height="22" Margin="310,319,0,0" VerticalAlignment="Top" Width="22" ToolTipService.ShowDuration="3600000" RenderTransformOrigin="14.136,0.818">
+            <Image.ToolTip>
+                <ToolTip Background="#feffe7">
+                    <StackPanel>
+                        <TextBlock xmlns:const="clr-namespace:XML_Editor_WPF.Properties" Text="{x:Static const:Resources.CanBeDroppedFromEnemiesDescription}" Margin="3"/>
+                    </StackPanel>
+                </ToolTip>
+            </Image.ToolTip>
+        </Image>
+
+    </Grid>
+</Window>

@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ActionDistDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ActionDistDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="AddNewBTN" xml:space="preserve">
+    <value>Создать</value>
+  </data>
+  <data name="BlastWavePrototypeDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BlastWavePrototypeDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="BulletPrototype" xml:space="preserve">
+    <value>Прототип снаряда</value>
+  </data>
+  <data name="BulletPrototypeDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BulletPrototypeDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="CanBeUsedInAutogeneratingDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CanBeUsedInAutogeneratingDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="CancelBTN" xml:space="preserve">
+    <value>Отменить</value>
+  </data>
+  <data name="ChargeSizeDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChargeSizeDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="Class" xml:space="preserve">
+    <value>Класс</value>
+  </data>
+  <data name="ClassDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ClassDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="COPYRIGHT" xml:space="preserve">
+    <value>DEM team © 27.03.2014</value>
+  </data>
+  <data name="Damage" xml:space="preserve">
+    <value>Урон</value>
+  </data>
+  <data name="DamageDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DamageDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="DamageTypeDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DamageTypeDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="DecalDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DecalDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="DeleteBTN" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="DEM_URL" xml:space="preserve">
+    <value>DeusExMachina</value>
+  </data>
+  <data name="DurabilityDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DurabilityDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="EditBTN" xml:space="preserve">
+    <value>Изменить</value>
+  </data>
+  <data name="ExplosionType" xml:space="preserve">
+    <value>Эфект попадания</value>
+  </data>
+  <data name="ExplosionTypeDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExplosionTypeDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="FilePath" xml:space="preserve">
+    <value>Адрес файла:</value>
+  </data>
+  <data name="FiringEffectDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FiringEffectDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="FiringRangeDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FiringRangeDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="FiringRate" xml:space="preserve">
+    <value>Скорострельность</value>
+  </data>
+  <data name="FiringRateDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FiringRateDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="FiringType" xml:space="preserve">
+    <value>Тип выстрела (оружия)</value>
+  </data>
+  <data name="FiringTypeDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FiringTypeDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="GroupingAngleDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GroupingAngleDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="InitialVelocityDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InitialVelocityDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="LoadFileBTN" xml:space="preserve">
+    <value>Загрузить файл</value>
+  </data>
+  <data name="MassDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MassDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="MaxChargesDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MaxChargesDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="ModelFileDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ModelFileDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="NameDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NameDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="NodeScaleDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NodeScaleDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="NumBulletsInShotDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NumBulletsInShotDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Предпросмотр:</value>
+  </data>
+  <data name="PriceDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PriceDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="PROGRAM_URL" xml:space="preserve">
+    <value>Сайт программы</value>
+  </data>
+  <data name="RechargingTimeDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RechargingTimeDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="RecoilForceDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RecoilForceDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="ResourceType" xml:space="preserve">
+    <value>Тип слота</value>
+  </data>
+  <data name="ResourceTypeDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ResourceTypeDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="SaveBTN" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="SelectFileBTN" xml:space="preserve">
+    <value>Выбрать файл</value>
+  </data>
+  <data name="ShellsPoolSizeDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ShellsPoolSizeDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="Title_AddWindow" xml:space="preserve">
+    <value>WeaponXmlEditor - Окно редактирования</value>
+  </data>
+  <data name="Title_MainWindow" xml:space="preserve">
+    <value>WeaponXmlEditor - Главное окно</value>
+  </data>
+  <data name="TracerEffectDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TracerEffectDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="TracerRangeDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TracerRangeDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="TurningSpeedDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TurningSpeedDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="VisibleInEncyclopediaDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VisibleInEncyclopediaDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="WithShellsPoolLimitDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WithShellsPoolLimitDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="CanBeDroppedFromEnemiesDescription" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CanBeDroppedFromEnemiesDescription.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="DELETE_CHEKER" xml:space="preserve">
+    <value>Удалять без подтверждения</value>
+  </data>
+</root>

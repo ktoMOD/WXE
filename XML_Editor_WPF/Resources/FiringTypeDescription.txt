@@ -1,0 +1,13 @@
+Firing Type - Тип выстрела (оружия).
+Существуют такие параметры:
+ - MachineGun - Пулемет.
+ - Laser - Лазер.
+ - ShotGun - Дробовик.
+ - Plasma - Плазма.
+ - Artillery - Миномёт.
+ - Cannon - Пушка.
+ - Rocket - Ракетница.
+
+ Меридиан 113:
+  - FlamePlasma - Огнемёт.
+  - ElectroPlasma - Авто-стоп (Шокер).
